@@ -1,0 +1,2 @@
+ACTION=="add|change", SUBSYSTEM=="usb", ATTRS{idVendor}=="056a", ATTR{idProduct}=="0315", RUN="/usr/local/bin/wacom-setup.sh"
+ACTION=="add|change", SUBSYSTEM=="usb", ATTRS{idVendor}=="056a", ATTR{idProduct}=="0084", RUN="/usr/local/bin/wacom-setup.sh"

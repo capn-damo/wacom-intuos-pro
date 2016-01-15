@@ -31,6 +31,3 @@ The set includes:
     touches, according to selected mode. This script can switch only between 4
     predefined modes (bindings are hardcoded in the script). This script does
     not care of tablet profile currently selected.
-* install.sh - sample script that installs files described above to their
-  desired locations.
-
