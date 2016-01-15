@@ -1,0 +1,3 @@
+# add read/write access to "users": GROUP="users"
+ACTION=="add|change", SUBSYSTEM=="usb", ATTRS{idVendor}=="056a", ATTR{idProduct}=="0315", GROUP="users", RUN="/usr/local/bin/wacom-setup.sh"
+ACTION=="add|change", SUBSYSTEM=="usb", ATTRS{idVendor}=="056a", ATTR{idProduct}=="0084", GROUP="users", RUN="/usr/local/bin/wacom-setup.sh"
