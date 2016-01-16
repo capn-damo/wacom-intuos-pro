@@ -32,6 +32,6 @@ esac
 xsetwacom set "$PAD" AbsWheelDown "$RINGDOWN"
 xsetwacom set "$PAD" AbsWheelUp "$RINGUP"
 
-if command -v notify-send > /dev/null 2>&1
-then notify-send -a "Wacom Tablet" "Wacom Ring Mode" "$DESCRIPTION"
+if command -v notify-send > /dev/null 2>&1;then 
+    notify-send -a "Wacom Tablet" "Wacom Ring Mode" "$DESCRIPTION"
 fi

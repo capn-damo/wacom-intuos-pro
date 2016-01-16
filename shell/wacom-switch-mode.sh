@@ -7,11 +7,6 @@ if [ ! -f "$CONTROL" ];then
     exit 1
 fi
 
-#if [ ! -w "$CONTROL" ];then 
-    #echo "Giving $USER write permission for wacom control file..."
-    #gksudo chown $USER: $CONTROL
-#fi
-
 MODE=$(cat $CONTROL)
 echo "Current mode is $MODE"
 MODE=$(( (MODE+1)%4 ))

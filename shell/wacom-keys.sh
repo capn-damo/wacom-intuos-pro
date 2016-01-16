@@ -39,5 +39,3 @@ xsetwacom set "$_PAD" AbsWheelUp "key shift ."       # GIMP increase value x2
 xsetwacom set "$_PAD" AbsWheelDown "key shift ,"     # GIMP decrease value x2
 
 xsetwacom set "$_TOUCH" Touch off                    # Disable touch
-
-echo "Touch is off" >> $HOME/tmp/tmp.txt

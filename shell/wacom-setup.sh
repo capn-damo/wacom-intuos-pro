@@ -14,8 +14,7 @@ while [ $COUNT -gt 0 ];do
 done
 
 if [ $FOUND = 1 ];then
-    chmod -v a+w /sys/bus/usb/devices/*/*/wacom_led/status_led0_select
-    #$HOME/bin/wacom-keys.sh
+    chown 1000:1000 /sys/bus/usb/devices/*/*/wacom_led/status_led0_select
 else
     echo "File was not found for 10 seconds, exiting..."
 fi
