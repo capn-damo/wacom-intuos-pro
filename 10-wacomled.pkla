@@ -1,0 +1,6 @@
+[Local Users]
+Identity=unix-group:*
+Action=org.freedesktop.policykit.exec
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
