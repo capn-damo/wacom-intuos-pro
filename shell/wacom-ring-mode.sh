@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ $# != 1 ]
-then echo "Usage: wacom-ring-mode.sh {0|1|2|3}"
-     exit 0
+if ! (( $# == 1 ));then
+    echo "Usage: wacom-ring-mode.sh [0|1|2|3]"
+    exit 0
 fi
 
 MODE=$1
