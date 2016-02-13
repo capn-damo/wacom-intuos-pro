@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# Wacom Intuos Pro Graphics Tablet
+# Sets mode for keys and ring
+# <damo>, February 2016
 
 if ! (( $# == 1 ));then
     echo "Usage: wacom-ring-mode.sh [0|1|2|3]"
@@ -6,10 +10,7 @@ if ! (( $# == 1 ));then
 fi
 
 MODE=$1
-
 PAD=$(xsetwacom list dev | grep -o ".*pad")
-STYLUS=$(xsetwacom list dev | grep -o ".*stylus")
-TOUCH=$(xsetwacom list dev | grep -o ".*touch")
 
 case $MODE in
   0) DESCRIPTION="Brush size"
