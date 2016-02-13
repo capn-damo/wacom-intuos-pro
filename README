@@ -31,3 +31,5 @@ Files:
   * wacom-ring-mode.sh - Shell script which assigns actions to tablet ring
     touches, according to selected mode. This script can switch only between 4
     predefined modes (bindings are hardcoded in the script). 
+  * wacom-toggle-touch.sh - Shell script to toggle Touch on/off.
+                            This is run with a keybind (default is Alt-F12), or by bottom button
