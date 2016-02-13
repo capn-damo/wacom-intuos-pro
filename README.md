@@ -1,4 +1,4 @@
-##Scripts to configure and manage Wacom Intuos Pro graphics tablet
+###Scripts to configure and manage Wacom Intuos Pro graphics tablet
 
 This is a set of scripts to set up and customize Wacom Intuos Pro tablets under
 Linux/X11/udev.  Original ideas taken from *https://github.com/portnov/wacom-intuos-pro-scripts*
@@ -17,7 +17,7 @@ Linux/X11/udev.  Original ideas taken from *https://github.com/portnov/wacom-int
     wacom-runtime.sh.
     Install to */etc/udev/rules.d/*
 
-* shell scripts: Install to /usr/bin/ or /usr/local/bin/ for example.
+* shell scripts: Install to */usr/bin/* or */usr/local/bin/* for example.
 
   * **wacom-runtime.sh** - Sets up wacom_led for user write access
   * **wacom-keys.sh** - Configures Intuos Pro Express keys and ring
