@@ -20,7 +20,7 @@ Linux/X11/udev.  Original ideas taken from *https://github.com/portnov/wacom-int
 * shell scripts: Install to */usr/bin/* or */usr/local/bin/* for example.
 
   * **wacom-runtime.sh** - Sets up wacom_led state file for user write access
-  * **wacom-keys.sh** - Configures Intuos Pro Express keys and Ring
+  * **wacom-keys.sh** - Configures Intuos Pro Express keys and Ring.
                     This is run with a keybind (default is Control-F12) initially, after
                     hotplugging. Subsequently can be run with the centre button (Button 1).
                     It could also be run from autostart at login, if the device is attached
