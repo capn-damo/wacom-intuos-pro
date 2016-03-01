@@ -1,0 +1,2 @@
+# Give the users group permissions to set Wacom device LEDs.
+ACTION=="add", DRIVER=="wacom", ATTRS{idVendor}=="056a", RUN+="/usr/local/bin/wacom-setup.sh"
