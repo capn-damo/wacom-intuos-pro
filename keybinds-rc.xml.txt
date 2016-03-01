@@ -1,0 +1,26 @@
+KEYBINDS FOR OPENBOX
+--------------------
+
+Add the following to `.config/openbox/rc.xml`, then run Openbox -> Reconfigure
+
+
+<!-- KEYBINDS FOR WACOM TABLET -->
+    <keybind key="C-F12">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Run</name>
+        </startupnotify>
+        <command>/usr/local/bin/wacom-switch-mode.sh</command>
+      </action>
+    </keybind>
+    <keybind key="A-F12">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Run</name>
+        </startupnotify>
+        <command>/usr/local/bin/wacom-toggle-touch.sh</command>
+      </action>
+    </keybind>
+<!-- END KEYBINDS FOR WACOM TABLET -->
