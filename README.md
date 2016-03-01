@@ -14,12 +14,12 @@ Linux/X11/udev.  Original ideas taken from *https://github.com/portnov/wacom-int
 * udev directory:
   * **80-wacom.rules** - Udev rules file. Note that for models other than Intuos Pro M, you will
     need to change *idProduct* parameter. Enables unprivileged-user write access, running 
-    *wacom-runtime.sh*.
+    *wacom-setup.sh*.
     Install to */etc/udev/rules.d/*
 
-* shell scripts: Install to */usr/bin/* or */usr/local/bin/* for example.
+* shell scripts: Install to */usr/local/bin/*
 
-  * **wacom-runtime.sh** - Sets up wacom_led state file for user write access
+  * **wacom-setup.sh** - Sets up wacom_led state file for user write access
   * **wacom-keys.sh** - Configures Intuos Pro Express keys and Ring.
                     This is run with a keybind (default is Control-F12) initially, after
                     hotplugging. Subsequently can be run with the centre button (Button 1).
@@ -33,3 +33,7 @@ Linux/X11/udev.  Original ideas taken from *https://github.com/portnov/wacom-int
     predefined modes (bindings are hardcoded in the script). 
   * **wacom-toggle-touch.sh** - Shell script to toggle Touch on/off.
                             This is run with a keybind (default is Alt-F12), or by bottom button (Button 13)
+                            
+* **keybinds-rc.xml.txt** - Example rc.xml entries for Openbox keybinds.
+                    *wacom-switch-mode.sh* must be run once manually after hot-plugging (Control-F12),
+                    to set up the tablet keys for the $USER.
