@@ -8,7 +8,6 @@
 
 COUNT=6
 FOUND=
-RUN=
 
 if [[ $1 = "--user" ]];then           # script has been started from autostart as $USER
     /usr/local/bin/wacom-keys.sh && exit
@@ -26,10 +25,8 @@ while (( $COUNT > 0 ));do
 done
 
 if (( $FOUND ));then 
-    if ! [[ $RUN = 1 ]];then
-        chown 1000:1000 /sys/bus/usb/devices/*/*/wacom_led/status_led0_select 
-        echo "Wacom LED's activated"    # make LED state writeable by $USER
-    fi
+    chown 1000:1000 /sys/bus/usb/devices/*/*/wacom_led/status_led0_select 
+    echo "Wacom LED's activated"    # make LED state writeable by $USER
 else 
     echo "LED File was not found for 6 seconds, exiting..." 2>&1
 fi

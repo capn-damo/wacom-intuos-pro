@@ -20,8 +20,6 @@
 # Get current settings with:    xsetwacom get "$PAD" all
 #
 ########################################################
-#export DISPLAY=:0
-#export XAUTHORITY=/home/damo/.Xauthority
 
 if [ -e /sys/bus/usb/devices/*/*/wacom_led/status_led0_select ];then 
     PAD=$(xsetwacom list dev | grep -o ".*pad")
